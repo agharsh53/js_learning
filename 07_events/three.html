@@ -15,10 +15,32 @@
     const sayDate = function(str){
         console.log(str,Date.now())
     }
-    const intervalId=setInterval(sayDate,2000,"Koushal");
+    // const intervalId=setInterval(sayDate,2000,"Koushal");
     
-    clearInterval(intervalId)
+    // clearInterval(intervalId)
+    
+    let intervalId;  // to store the interval reference
 
+    // Function to start the interval
+    const startInterval = function(){
+        if (!intervalId) {  // to prevent multiple intervals being set
+            intervalId = setInterval(() => sayDate("Koushal"), 1000);
+            console.log('Interval started');
+        }
+    }
+
+    // Function to stop the interval
+    const stopInterval = function(){
+        if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = null;  // reset the intervalId to allow restart
+            console.log('Interval stopped');
+        }
+    }
+
+    document.querySelector('#start').addEventListener('click', startInterval);
+    document.querySelector('#stop').addEventListener('click', stopInterval);
+    
     
     
 </script>
