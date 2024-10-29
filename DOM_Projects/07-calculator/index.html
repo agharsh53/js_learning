@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles.css" />
+    
+</head>
+<body>
+
+<div class="calculator">
+    <div class="calculator-screen" id="screen">0</div>
+    <button class="button button-clear" onclick="clearScreen()">AC</button>
+    <button class="button" onclick="inputSymbol('+/-')">+/-</button>
+    <button class="button" onclick="inputSymbol('%')">%</button>
+    <button class="button button-operator" onclick="inputSymbol('/')">÷</button>
+
+    <button class="button" onclick="inputNumber('7')">7</button>
+    <button class="button" onclick="inputNumber('8')">8</button>
+    <button class="button" onclick="inputNumber('9')">9</button>
+    <button class="button button-operator" onclick="inputSymbol('*')">×</button>
+
+    <button class="button" onclick="inputNumber('4')">4</button>
+    <button class="button" onclick="inputNumber('5')">5</button>
+    <button class="button" onclick="inputNumber('6')">6</button>
+    <button class="button button-operator" onclick="inputSymbol('-')">-</button>
+
+    <button class="button" onclick="inputNumber('1')">1</button>
+    <button class="button" onclick="inputNumber('2')">2</button>
+    <button class="button" onclick="inputNumber('3')">3</button>
+    <button class="button button-operator" onclick="inputSymbol('+')">+</button>
+
+    <button class="button" onclick="inputNumber('0')">0</button>
+    <button class="button" onclick="inputSymbol('.')">.</button>
+    <button class="button button-equal" onclick="calculate()">=</button>
+</div>                                                                                                                                                                                              
+
+<script src="agharsh53.js"></script>
+
+</body>
+</html>
