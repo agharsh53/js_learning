@@ -15,10 +15,10 @@ console.log(null>0);
 console.log(null==0);
 console.log(null>=0);
 
-
 console.log(undefined>0);
 console.log(undefined==0);
 console.log(undefined<0);
+
 */
 
 //=== It will stricktly check the value of data type is same or another conditions are fellows

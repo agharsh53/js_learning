@@ -29,3 +29,15 @@ console.log("https://hitesh.com/hitesh%20choudhary".replace('%20','-')) //https:
 console.log("agharsh53".includes("Harsh")) //false
 
 console.log("hello-world-.com".split('-'))
+
+let StringOne = "chaiAurCode is best learning plateform"
+let stringTwo = "Frontend and backend development"
+
+console.log(StringOne.charCodeAt(1))
+console.log(String.fromCharCode(104))
+
+console.log(stringTwo.indexOf("end"))
+console.log(stringTwo.lastIndexOf("end"))
+console.log(stringTwo.match(/end/g))
+console.log(StringOne.repeat(2))
+console.log(stringTwo.replace(/end/g,"End"))
